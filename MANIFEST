@@ -1,0 +1,24 @@
+bin/haver-new-user.pl
+bin/haver-passwd.pl
+bin/haverd.pl
+Build.PL
+COPYING
+lib/Haver/Server.pm
+lib/Haver/Server/Connection.pm
+lib/Haver/Server/Connection/Commands.pm
+lib/Haver/Server/Globals.pm
+lib/Haver/Server/Listener.pm
+lib/Haver/Server/Object.pm
+lib/Haver/Server/Object/Channel.pm
+lib/Haver/Server/Object/Hammer.pm
+lib/Haver/Server/Object/Index.pm
+lib/Haver/Server/Object/User.pm
+lib/Haver/Server/Registry.pm
+Makefile.PL
+MANIFEST			This list of files
+MANIFEST.SKIP
+META.yml
+NEWS
+README
+t/basic.t
+TODO

@@ -1,0 +1,28 @@
+Source: haver-server-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 4.0.2)
+Build-Depends-Indep: perl (>= 5.8.0-7)
+Maintainer: Dylan William Hardison <dylanwh@tampabay.rr.com>
+Standards-Version: 3.6.1
+
+Package: haver-server-perl
+Architecture: all
+Depends: ${perl:Depends}, ${misc:Depends}, libpoe-perl, libhaver-core-perl, libdigest-sha1-perl
+Description:  Haver chat server.
+ Haver::Server is the unified interface for the entire Haver chat server
+ collection of modules. haverd.pl is just a small wrapper around
+ this module. This module requires a lot more documentation than I
+ can produce at this time, so I will just ramble on about how, in general,
+ to use it.
+ .
+ The most basic usage is to say perl
+ -MHaver::Server -e'Haver::Server->boot(option => "value", etc => "foo")
+ .
+ There are a number of options, such as bindaddr, port, ikc_port, ikc_bindaddr,
+ which I will have to explain later. Right now the interface may change or be completely
+ different. I'm not entirely sure this module shouldn't be under the POE::Component::Server::
+ namespace, as the client portion of haver is. I do really like the current namespace,
+ but this being an open source projct, perhaps I will not get my way.
+ .
+ This description was automagically extracted from the module by dh-make-perl.

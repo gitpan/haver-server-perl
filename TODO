@@ -1,0 +1,15 @@
+
+
+
+
+
+This is the deep, mysterious Future:
+
+* Add support for SSL.
+  This means we have to get SSLSocketFactory working.
+  Someone in freenode/#poe said he had already done this.
+    * SSL-connected people should have a special (locked)
+	  property on them: 'using-ssl' or some such.
+
+* Implement line-length limits.
+
